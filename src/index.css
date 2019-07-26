@@ -1,0 +1,12 @@
+html{
+    background-image: url(../src/common/background.jpg);
+    width:100%;
+    height:100%;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
