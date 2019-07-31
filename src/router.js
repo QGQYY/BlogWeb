@@ -1,17 +1,32 @@
 import React,{Component} from 'react';
-import {HashRouter,Route,Switch} from 'react-router-dom';
-import DefaultLayout from './layouts/defaultLayout/defaultLayout';
-import LoginUsers from './layouts/LoginUsers/LoginUsers';
+import { BrowserRouter as Router,HashRouter,Route,Switch} from 'react-router-dom';
+
+import LoginForm from './layouts/LoginUsers/LoginUsers';
+import Homepage from './layouts/homepage/homepage';
+import Label from './layouts/Label/Label';
+import Memorandum from './layouts/Memorandum/Memorandum';
+import Relevant from './layouts/RelevantConnections/RelevantConnections';
+import About from './layouts/about/about';
+import Archives from "./layouts/archives/archives"
+
+
 export default class RouterWrap extends Component {
+
     render() {
         return (
             <div id="router">
-                <HashRouter>
+                <Router>
                     <Switch>
-                        <Route path="/" component={DefaultLayout} exact/>
-                        <Route path="/login" component={LoginUsers}/>
+                        <Route exact path="/" component={Homepage} />
+                        <Route path="/homepage" component={Homepage}/>
+                        <Route path="/label" component={Label}/>
+                        <Route path="/login" component={LoginForm}/>
+                        <Route path="/memorandum" component={Memorandum}/>
+                        <Route path="/relevant" component={Relevant}/>
+                        <Route path="/about" component={About}/>
+                        <Route path="/archives" component={Archives}/>
                     </Switch>
-                </HashRouter>
+                </Router>
             </div>
         )
     }

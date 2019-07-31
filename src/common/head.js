@@ -1,15 +1,15 @@
 import React,{Component} from 'react';
 import {Menu,Icon} from 'antd'
+import {NavLink} from 'react-router-dom';
 import "./style.css"
 //import 'antd/es/menu/style/index.css'
 import "../assets/ttfs/JingHongShouShu.ttf"
 import "../assets/ttfs/XiaoYaoXingShu.ttf"
 
-const { SubMenu } = Menu;
 
 export default class HeadNav extends Component {
     state = {
-        current: 'home',
+        current: '',
     }
 
     handleClick = e => {
@@ -26,24 +26,22 @@ export default class HeadNav extends Component {
                 <hr className="divider_head"/>
                 <Menu onClick={this.handleClick} selectedKeys={[this.state.current]} mode="horizontal">
                     <Menu.Item key="home">
-                        <Icon type="home" />
-                        我的首页
+                        <NavLink className="RouterToPage" exact to="/homepage"><Icon type="home" />我的首页</NavLink>
                     </Menu.Item>
                     <Menu.Item key="folder" >
-                        <Icon type="folder" />
-                        我的存档
+                        <NavLink className="RouterToPage" to="/archives"><Icon type="folder" />我的存档</NavLink>
                     </Menu.Item>
                     <Menu.Item key="tag" >
-                        <Icon type="tag" />
-                        我的标签
+                        <NavLink className="RouterToPage" to="/label"><Icon type="tag" />我的标签</NavLink>
+                    </Menu.Item>
+                    <Menu.Item key="read">
+                        <NavLink className="RouterToPage" to="/memorandum"><Icon type="read" />备忘录</NavLink>
                     </Menu.Item>
                     <Menu.Item key="message">
-                        <Icon type="message" />
-                        关于
+                        <NavLink className="RouterToPage" to="/about"><Icon type="message" />关于</NavLink>
                     </Menu.Item>
-                    <Menu.Item key="alipay">
-                        <Icon type="link" />
-                        相关链接
+                    <Menu.Item key="link">
+                        <NavLink className="RouterToPage" to="/relevant"><Icon type="link" />相关链接</NavLink>
                     </Menu.Item>
                 </Menu>
             </div>
