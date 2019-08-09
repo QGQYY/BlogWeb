@@ -3,18 +3,7 @@ import { Divider,Affix ,List, Avatar, Icon} from 'antd'
 import "./homepage.css"
 import HeadNav from "../../common/head"
 import Footer from "../../common/footer"
-const listData = [];
-for (let i = 0; i < 23; i++) {
-    listData.push({
-        href: 'http://ant.design',
-        title: `ant design part ${i}`,
-        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-        description:
-            'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-        content:
-            'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-    });
-}
+import {listData} from  "../../common/articleList"
 
 const IconText = ({ type, text }) => (
     <span>
@@ -36,7 +25,7 @@ export default  class Homepage extends React.Component{
                             onChange: page => {
                                 console.log(page);
                             },
-                            pageSize: 20,
+                            pageSize: 5,
                         }}
                         dataSource={listData}
                         footer={
@@ -46,6 +35,7 @@ export default  class Homepage extends React.Component{
                         }
                         renderItem={item => (
                             <List.Item
+                                className="articles"
                                 key={item.title}
                                 actions={[
                                     <IconText type="like-o" text="156" />,

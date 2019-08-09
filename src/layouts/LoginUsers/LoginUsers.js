@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import "./login.css"
 import "../../common/style.css"
-import Footer from "../../common/footer";
 class LoginUsers extends React.Component{
     constructor(props){
         super(props)
@@ -32,16 +31,17 @@ class LoginUsers extends React.Component{
         const { getFieldDecorator } = this.props.form;
         return(
             <div id='LoginUsers'>
-                <div>
-
-                </div>
+                <span className={"Login_title"}>个人网页管理系统</span>
+                <div className={"LoginUsers_box"}/>
+                <div className={"backgroundImage"}/>
                 <Form onSubmit={this.handleSubmit} className="login-form">
-                    <span>
+                    <span className={"welcomeWords"}>
                         欢迎访问
                     </span>
+
                     <Form.Item>
                         {getFieldDecorator('username', {
-                            rules: [{ required: true, message: 'Please input your username!' }],
+                            rules: [{ required: true, message: '请输入用户名' }],
                         })(
                             <Input
                                 prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -51,7 +51,7 @@ class LoginUsers extends React.Component{
                     </Form.Item>
                     <Form.Item>
                         {getFieldDecorator('password', {
-                            rules: [{ required: true, message: 'Please input your Password!' }],
+                            rules: [{ required: true, message: '请输入密码' }],
                         })(
                             <Input
                                 prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
@@ -74,7 +74,12 @@ class LoginUsers extends React.Component{
                         </Button>
                     </Form.Item>
                 </Form>
-                <Footer/>
+                <div className={"footerLogin"}>
+                    <span className={"footerLoginWord"}>
+                        <Icon type="copyright" />
+                        2019&nbsp;&nbsp;LanYuaner.&nbsp;&nbsp;AllRightsReserved.&nbsp;&nbsp;
+                    </span>
+                </div>
             </div>
         )
     }

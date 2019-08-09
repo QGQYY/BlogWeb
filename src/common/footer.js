@@ -22,7 +22,8 @@ export default class Footer extends React.Component{
     render() {
         return(
             <div className="footer">
-                <div >
+                <hr/>
+                <div style={{marginTop:"30px"}}>
                     <span>
                         本站总访问量:&nbsp;{visitedNumber}&nbsp;<Divider style={{color:"blue"}}	type="vertical" /><span className="connection"><NavLink to="/about">联系博主</NavLink></span>
                     </span>
