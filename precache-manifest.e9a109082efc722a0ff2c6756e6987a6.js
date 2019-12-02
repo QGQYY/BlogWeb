@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "34b656fedf1347938002d5c8ab118201",
-    "url": "/firstapp/static/media/YuShouJinShu.34b656fe.ttf"
+    "revision": "299db1c83f330895e6889721dd00d488",
+    "url": "/firstapp/static/media/JingHongShouShu.299db1c8.ttf"
   },
   {
-    "revision": "fdcf1c0d831b09ea0414",
-    "url": "/firstapp/static/css/main.41797fcd.chunk.css"
+    "revision": "a6860bcf75fedc4fb402",
+    "url": "/firstapp/static/css/main.f1362ff5.chunk.css"
   },
   {
-    "revision": "924aa0860b12ce4edff0",
-    "url": "/firstapp/static/js/1.924aa086.chunk.js"
+    "revision": "071d52783989c6ac9a06",
+    "url": "/firstapp/static/js/1.071d5278.chunk.js"
   },
   {
     "revision": "e984fe019c37b17e4af3",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/firstapp/static/media/YunXiJinShu.ffd5cb30.ttf"
   },
   {
-    "revision": "fdcf1c0d831b09ea0414",
-    "url": "/firstapp/static/js/main.fdcf1c0d.chunk.js"
+    "revision": "34b656fedf1347938002d5c8ab118201",
+    "url": "/firstapp/static/media/YuShouJinShu.34b656fe.ttf"
   },
   {
-    "revision": "299db1c83f330895e6889721dd00d488",
-    "url": "/firstapp/static/media/JingHongShouShu.299db1c8.ttf"
+    "revision": "a6860bcf75fedc4fb402",
+    "url": "/firstapp/static/js/main.a6860bcf.chunk.js"
   },
   {
     "revision": "42c04bc75b5848bf7411786f954d0271",
@@ -48,7 +48,15 @@ self.__precacheManifest = [
     "url": "/firstapp/static/media/background.d6357865.jpg"
   },
   {
-    "revision": "05ef5d0b5a52bbb53db08c0b4c8dfe91",
+    "revision": "b66bf8216b3d8c3345f70e9ce4da0d27",
+    "url": "/firstapp/static/media/49a1ea78c05e46a48df471c952e9f0cc.b66bf821.gif"
+  },
+  {
+    "revision": "be4d1b9988d2ff6069f5ba665a31d1e3",
+    "url": "/firstapp/static/media/touxiang.be4d1b99.jpg"
+  },
+  {
+    "revision": "7972370974d5e481de4fe62d3cf87a34",
     "url": "/firstapp/index.html"
   }
 ];
